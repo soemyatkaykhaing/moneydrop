@@ -132,8 +132,10 @@ void main(){
 		int money[3][2];
 		for(i=0;i<limit;i++)
 		{
-			if(usermoney<=0)
+			if(usermoney<=0){
+				printf("Sorry You lost!");
 				break;
+			}
 			printf("\n Enter answer :");
 			scanf("%d",&index);
 			while(index<1||index>4)
